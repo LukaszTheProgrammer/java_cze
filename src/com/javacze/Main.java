@@ -1,14 +1,13 @@
 package com.javacze;
 
-import com.javacze.a.Osoba;
+import com.javacze.shapes.Circle;
 
 public class Main {
 
     public static void main(String[] args) {
-        Osoba o = new Osoba("Jan", "Kowalski");
+        Circle c = new Circle();
 
-        System.out.println(o.getImie());
-        System.out.println(o.getNazwisko());
+        System.out.println(c.getCenter());
 
     }
 }
