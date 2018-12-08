@@ -1,11 +1,28 @@
 
-
+class Auto{
+    int predkosc;
+    double przyspieszenie;
+    double pojemnosc;
+}
 
 
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Auto bmw = new Auto();
+        bmw.predkosc = 256;
+        bmw.przyspieszenie=5.0;
+        bmw.pojemnosc = 2.0;
+
+        Auto mercedes = new Auto();
+        mercedes.predkosc = 300;
+        mercedes.przyspieszenie = 5.5;
+        mercedes.pojemnosc= 2.5;
+
+        System.out.println(bmw.predkosc);
+
         Punkt p = new Punkt();
         p.x=15;
         System.out.println(p.x);
