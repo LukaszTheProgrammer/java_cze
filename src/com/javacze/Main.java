@@ -9,7 +9,6 @@ public class Main {
 
         System.out.println(o.getImie());
         System.out.println(o.getNazwisko());
-
     }
 }
 
