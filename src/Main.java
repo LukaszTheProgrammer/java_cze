@@ -1,18 +1,33 @@
+
+
+
+
+
 public class Main {
 
     public static void main(String[] args) {
-        String s1 = "Java";
-        String s2 = "Java";
-        String s3 = new String ("Java");
+        Punkt p = new Punkt();
+        System.out.println(p.x);
+        System.out.println(p.y);
 
-        System.out.println("s1+s2 -> "+(s1+s1));
-        System.out.println("s1==s2 -> "+(s1==s1));
-        System.out.println("s1==s2 -> "+s1==s1);
-        System.out.println("s1==s3 -> "+(s1==s3));
-        System.out.println("s1!=s3 -> "+(s1!=s3));
-        System.out.println("s1.equals(s2) -> "+s1.equals(s2));
-        System.out.println("s1.equals(s3) -> "+s1.equals(s3));
-
+        Dummy dummy = new Dummy();
+        System.out.println(dummy.b);
+        System.out.println(dummy.c);
+        System.out.println(dummy.s);
+        System.out.println(dummy.d);
+        System.out.println(dummy.p);
     }
+
+}
+class Dummy {
+    boolean b;
+    char c;
+    String s;
+    Punkt p;
+    double d;
+}
+class Punkt {
+    int x;
+    int y;
 }
 
