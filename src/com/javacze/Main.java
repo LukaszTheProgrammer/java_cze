@@ -8,6 +8,7 @@ public class Main {
         Circle c = new Circle();
 
         System.out.println(c.getCenter());
+        System.out.println(c.getC());
 
     }
 }
