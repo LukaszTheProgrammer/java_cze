@@ -5,8 +5,6 @@ class Auto{
     double pojemnosc;
 }
 
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -29,14 +27,15 @@ public class Main {
         System.out.println(p.y);
 
         Dummy dummy = new Dummy(); //tworzymy obiekt typu Dummy
-        //który posiada 5 pól
-        Dummy d2;
-        dummy.b = true;
+        //który posiada 5 pól, żadnemu z pól nie nadaliśmy domyślnych wartości
+        //dlatego w poniższych liniach zobaczymy wartości domyślne zależne od typu zmiennych
         System.out.println(dummy.b);
         System.out.println(dummy.c);
         System.out.println(dummy.s);
         System.out.println(dummy.d);
         System.out.println(dummy.p);
+
+        Dummy d2; // Deklaracja obiektu dummy - nic nie tworzymy - wartość d2 jest null
     }
 
 }
