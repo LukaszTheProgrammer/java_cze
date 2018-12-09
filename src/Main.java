@@ -8,12 +8,17 @@ public class Main {
         String operacja = scanner.next();
         int operand2 = scanner.nextInt();
 
-        if (operacja.equals("+")) {
-            System.out.println(operand1 + operand2);
-        } else if (operacja.equals("*")) {
-            System.out.println(operand1 * operand2);
-        } else {
-            System.out.println("Nieobslugiwane polecenie!");
+        switch (operacja) {
+            case "+":
+                int wynik = operand1 + operand2;
+                System.out.println(wynik);
+                break;
+            case "*":
+                System.out.println(operand1 * operand2);
+                break;
+            default:
+                System.out.println("Operacja nieobsługiwana");
+                break;
         }
     }
 }
