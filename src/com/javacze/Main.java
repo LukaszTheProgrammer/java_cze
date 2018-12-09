@@ -5,11 +5,10 @@ public class Main {
     public static void main(String[] args) {
         int licznik = -1;
 
-        while(licznik < 0) {
+        do{
             System.out.println("Hello: "+licznik);
             licznik = licznik - 1; //licznik--;
-            //licznik = licznik +1 == licznik++
-        }
+        }while(licznik > 0);
     }
 }
 
