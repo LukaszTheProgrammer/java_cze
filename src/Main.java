@@ -12,15 +12,18 @@ class Demo {
 public class Main {
 
     public static void main(String[] args) {
-        Demo d1 = new Demo();
-        System.out.println(Demo.licznik+ " "+d1.x);
-        Demo d2 = new Demo();
-        System.out.println(Demo.licznik+ " "+d2.x);
-        Demo d3 = new Demo();
-        System.out.println(Demo.licznik+ " "+d3.x);
-        Demo d4 = new Demo();
-        System.out.println(Demo.licznik+ " "+d4.x);
+        // 2 -> 4
+        // 3 -> 6
+        // 4 -> 8
 
+        int wynik = podwajaj(16);  // 32
+        System.out.println(wynik);
     }
+
+    static int podwajaj(int liczba){
+        return liczba * 2;
+    }
+
+
 }
 
