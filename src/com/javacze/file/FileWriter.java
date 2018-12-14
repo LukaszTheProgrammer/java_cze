@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 public class FileWriter {
 
-    public void write(String filename, String line) throws IOException {
+    public static void write(String filename, String line) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new java.io.FileWriter(filename, true));
         PrintWriter printWriter = new PrintWriter(bufferedWriter);
         printWriter.println("Linia tekstu");
