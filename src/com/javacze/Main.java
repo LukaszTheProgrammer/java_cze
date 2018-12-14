@@ -4,7 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
+        String[] imiona = new String[]{"Asia", "Magda", "Wiola", "Jola"};
+
+        for (String imie : imiona) {
+            System.out.println(imie);
+        }
     }
 }
 
