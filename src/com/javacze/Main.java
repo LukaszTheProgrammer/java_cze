@@ -1,19 +1,14 @@
 package com.javacze;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException {
-
-        File plik = new File("/Users/lukasz/plik.txt");
-        Scanner scanner = new Scanner(plik);
-
-        while(scanner.hasNext()){
-            System.out.println(scanner.nextLine());
-        }
+    public static void main(String[] args) throws IOException {
+        PrintWriter printWriter = new PrintWriter("/Users/lukasz/plik_do_zapisu.txt");
+        printWriter.append("Zapisujemy pierwszą linię");
+        printWriter.close();
     }
 }
 
