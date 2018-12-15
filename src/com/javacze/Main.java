@@ -7,9 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int rozmiarTablicy = 5;
-        String[] imiona = new String[rozmiarTablicy];
-        for (int i = 0; i < rozmiarTablicy; i++) {
+        String[] imiona = new String[3];
+        for (int i = 0; i < imiona.length; i++) {
             System.out.println("Podaj imię:");
             imiona[i] = scanner.nextLine();
         }
