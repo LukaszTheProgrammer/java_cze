@@ -1,21 +1,20 @@
 package com.javacze;
 
 class Osoba {
-    String imie;
-    String nazwisko;
 
-    public Osoba(String imie, String nazwisko) {
+    private String imie;
+    private String nazwisko;
+
+    Osoba(String imie, String nazwisko) {
         this.imie = imie;
         this.nazwisko = nazwisko;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Osoba{");
-        sb.append("imie='").append(imie).append('\'');
-        sb.append(", nazwisko='").append(nazwisko).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return "Osoba{" + "imie='" + imie + '\''
+            + ", nazwisko='" + nazwisko + '\''
+            + '}';
     }
 }
 public class Main {
@@ -31,6 +30,12 @@ public class Main {
         for(int i=0 ; i < uzytkownicy.length; ++i){
             System.out.println(uzytkownicy[i]);
         }
+        System.out.println("");
+
+        for(int i=uzytkownicy.length-1 ; i >= 0; --i){
+            System.out.println(uzytkownicy[i]);
+        }
+        System.out.println("");
 
         int [] liczby = new int[]{1,2,45,67,80,34,90,23};
         for(int i=0 ; i < liczby.length; ++i){
@@ -42,11 +47,11 @@ public class Main {
             System.out.println(bools[i]);
         }
         System.out.println("");
+
         Osoba [] ludzie = new Osoba[]{new Osoba("Jan", "Kowalski"), new Osoba("Tomek", "Nowak")};
         for(int i=0 ; i < ludzie.length; ++i){
             System.out.println(ludzie[i]);
         }
-
     }
 }
 
