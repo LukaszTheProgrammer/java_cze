@@ -13,8 +13,14 @@ public class Main {
             imiona[i] = scanner.nextLine();
         }
 
-        for (String imie: imiona){
-            System.out.println("Witaj, "+imie);
+        for (String imie : imiona) {
+            String imieDuzymiLiterami = imie.toUpperCase();
+            System.out.println("Witaj, " + imieDuzymiLiterami);
+        }
+
+        int[] liczby = new int[]{1, 2, 3, 4, 5};
+        for (int liczba : liczby) {
+            System.out.println(liczba);
         }
     }
 }
