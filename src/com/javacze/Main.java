@@ -1,7 +1,6 @@
 package com.javacze;
 
-import static com.javacze.JednostkiTemperatury.CELCIUS;
-import static com.javacze.JednostkiTemperatury.FAHRENHEIT;
+import static com.javacze.JednostkiTemperatury.KELVIN;
 
 enum Compass {
     NORTH, SOUTH, EAST, WEST;
@@ -73,9 +72,9 @@ public class Main {
             case KELVIN:
                 return t1;
             case CELCIUS:
-                return new Temperatura(t1.geWartosc() + 273.15, CELCIUS);
+                return new Temperatura(t1.geWartosc() + 273.15, KELVIN);
             case FAHRENHEIT:
-                return new Temperatura(t1.geWartosc() * 1.8 + 32.00, FAHRENHEIT);
+                return new Temperatura(t1.geWartosc() * 1.8 + 32.00, KELVIN);
             default:
                 throw new IllegalArgumentException("Nieobsługiwana konwersja");
         }
