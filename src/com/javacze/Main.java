@@ -8,16 +8,17 @@ public class Main {
     }
 
     private static void rozwiazanieNaiwne(int rozmiarZadania) {
-        long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis(); // pobiera aktualny czas w milisekundach jako long
         long suma = 0l;
         for (int i=0; i< rozmiarZadania; ++i){
-            if(i%3==0 || i%5==0){
-                suma += i;
+            if(i%3==0 || i%5==0){ // sprawdzamy czy i jest podzielne przez 3 lub 5
+                suma += i; // powiększamy liczbę o wartość i
             }
         }
         System.out.println(suma);
-        long endTime = System.currentTimeMillis();
-        long czasRozwiazania = endTime - startTime;
+        long endTime = System.currentTimeMillis(); // pobiera aktualny czas w milisekundach
+        long czasRozwiazania = endTime - startTime; // otrzymujemy czasRozwiązania poprzez odjęcie czasu pobranego
+        // na początku zadania od czasu pobranego na końcu zadania
         System.out.println("Całość zajęła "+czasRozwiazania+" ms");
     }
 
