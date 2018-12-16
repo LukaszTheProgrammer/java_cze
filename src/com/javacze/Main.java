@@ -1,22 +1,36 @@
 package com.javacze;
 
-import java.io.FileNotFoundException;
+class Matematyka {
+
+    static int dodaj(int i, int k) {
+        return i + k;
+    }
+
+    static int dodaj(String i, String k) {
+        return Integer.valueOf(i) + Integer.valueOf(k); //Integer.valueOf konwertuje ze Stringa na Integer
+    }
+
+    static int dodaj(int[] ints) {
+        int suma = 0;
+        for(int i: ints){
+            suma += i;
+        }
+        return suma;
+    }
+}
 
 public class Main {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
-        printMany("jeden");
-        printMany("jeden","dwa");
-        printMany("jeden", "dwa", "trzy");
-        printMany();
-    }
+        int wynik1 = Matematyka.dodaj(143, 320); // wołane Matematyka.dodaj(int, int)
+        int wynik2 = Matematyka.dodaj("32", "64");// wołane Matematyka.dodaj(String,String)
+        int wynik3 = Matematyka.dodaj(new int[]{1,2,3,4,5});// wołane Matematyka.dodaj(int[])
 
-    private static void printMany(String... strings) {
-        for(String string: strings){
-            System.out.print(string+" ");
-        }
-        System.out.println("");
+        System.out.println(wynik1);
+        System.out.println(wynik2);
+        System.out.println(wynik3);
+
     }
 }
 
